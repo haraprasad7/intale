@@ -86,7 +86,32 @@ int main()
 
     }
     int div[20];
-    int goal1=(u1+l1)/2;
+    int l11=l1;
+    int rangelower;
+    int rangeupper;
+    if(l1==0){ // avoiding division by zero
+        l11=1;
+    }
+    int divu=50/l11;
+    int divl=50/u1;
+    int intdiv;
+    for(intdiv=2;intdiv<=14;intdiv++)
+    {
+        if(intdiv==divl)
+        {
+            intdiv=divu;
+
+        }
+        else{
+            rangelower=intdiv*l11;
+            rangeupper=intdiv*(u1+1)-1;
+
+        }
+
+
+
+    }
+
     /*div[0]=59/u1;
     for(j=60;j<=l2-1;j++)
     {
@@ -107,6 +132,7 @@ int main()
     this will be range of winning division card holder ,
      among different ranges select a good range good luck */
     /*
+
     for(j=0;j<=l;j++)   // division
         printf("%d\n",div[j]);  */
 
