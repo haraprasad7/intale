@@ -1,2 +1,4 @@
 this is our first git project test based on how we use it and all . so prettty amazing.
 its mazing we are making our first edit and may be redo it later. so u might not read it in future.
+
+i have made some changes
