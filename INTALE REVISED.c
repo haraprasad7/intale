@@ -86,6 +86,7 @@ int main()
 
     }
     int div[20];
+    int dk=0;
     int l11=l1;
     int rangelower;
     int rangeupper;
@@ -106,9 +107,15 @@ int main()
             rangelower=intdiv*l11;
             rangeupper=intdiv*(u1+1)-1;
 
+
+            if(rangelower<100)
+            {
+                printf("\n%d ---- lower\n  %d -----upper    \n",rangelower,rangeupper);
+                div[dk]=intdiv;
+                dk++;
+
+            }
         }
-
-
 
     }
 
@@ -121,11 +128,13 @@ int main()
                 div[l]=val;
             }
     }*/
-        printf("*************************************\n");
+        printf("***************multiplication**********************\n");
 
     for(j=0;j<=k;j++)   // multiplication
         printf("%d\n",mul[j]);
-    printf("*************************************\n");
+    printf("*************division************************\n");
+    for(j=0;j<dk;j++)   // division
+        printf("%d\n",div[j]);
 
     /* for division set upper and lower division limits
     excluding those values from integer 2 calcualte li * integer and u1+1  * integer,
